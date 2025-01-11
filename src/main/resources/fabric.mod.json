@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "magicmod",
+	"version": "${version}",
+	"name": "Magic Mod",
+	"description": "This mod adds magical items and blocks to Minecraft.",
+	"authors": [
+		"JCS"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/magicmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.jcsmecabricks.magicmod.MagicMod"
+		],
+		"client": [
+			"github.jcsmecabricks.magicmod.MagicModClient"
+		],
+		"fabric-datagen": [
+			"github.jcsmecabricks.magicmod.MagicModDataGenerator"
+		]
+	},
+	"mixins": [
+		"magicmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

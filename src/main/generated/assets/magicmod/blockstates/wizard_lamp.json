@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "click=false": {
+      "model": "magicmod:block/wizard_lamp"
+    },
+    "click=true": {
+      "model": "magicmod:block/wizard_lamp_on"
+    }
+  }
+}

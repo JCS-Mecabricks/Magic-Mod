@@ -1,0 +1,13 @@
+{
+  "asset_id": "magicmod:wise_master",
+  "author": {
+    "color": "gray",
+    "translate": "painting.magicmod.wise_master.author"
+  },
+  "height": 2,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.magicmod.wise_master.title"
+  },
+  "width": 2
+}

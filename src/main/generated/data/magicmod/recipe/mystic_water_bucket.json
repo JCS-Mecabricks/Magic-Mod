@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "magicmod:wizard_staff",
+    "minecraft:water_bucket"
+  ],
+  "result": {
+    "count": 1,
+    "id": "magicmod:mystic_water_bucket"
+  }
+}

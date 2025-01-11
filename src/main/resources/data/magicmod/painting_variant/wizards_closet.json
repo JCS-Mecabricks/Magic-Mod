@@ -1,0 +1,13 @@
+{
+  "asset_id": "magicmod:wizards_closet",
+  "author": {
+    "color": "gray",
+    "translate": "painting.magicmod.wizards_closet.author"
+  },
+  "height": 2,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.magicmod.wizards_closet.title"
+  },
+  "width": 2
+}

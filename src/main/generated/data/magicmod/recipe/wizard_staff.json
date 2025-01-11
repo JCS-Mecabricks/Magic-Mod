@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "minecraft:diamond",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "SIS",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "magicmod:wizard_staff"
+  }
+}

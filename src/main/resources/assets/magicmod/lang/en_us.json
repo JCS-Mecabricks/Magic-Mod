@@ -1,0 +1,20 @@
+{
+  "itemGroup.magicmod.magic_mod_group": "Magic Items",
+  "item.magicmod.wizard_staff": "Wizard Staff",
+  "item.magicmod.wand": "Wand",
+  "item.magicmod.mystic_water_bucket": "Mystic Bucket",
+  "block.magicmod.wizard_lamp": "Wizard Lamp",
+  "block.magicmod.exhibit_stand": "Exhibit Stand",
+  "gui.magicmod.exhibit_stand": "Exhibit Stand",
+  "painting.magicmod.wise_master.author": "JCS",
+  "painting.magicmod.wise_master.title": "Wise Master",
+  "painting.magicmod.wizards_closet.author": "JCS",
+  "item.minecraft.potion.effect.levitation_potion": "Levitation Potion",
+  "item.minecraft.splash_potion.effect.levitation_potion": "Levitation Splash Potion",
+  "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
+  "item.minecraft.lingering_potion.effect.levitation_potion": "Levitation Lingering Potion",
+  "painting.magicmod.wizards_closet.title": "Wizard's Closet",
+  "tooltip.magicmod.wizard_staff.tooltip.shift": "Press §bShift§r for more info",
+  "tooltip.magicmod.wizard_staff.tooltip.1": "This §gWizard§r Staff shoots wind charges and",
+  "tooltip.magicmod.wizard_staff.tooltip.2": "will give weakness and slowness when hitting"
+}
