@@ -22,6 +22,7 @@ public class ModBlocks {
     public static final Block EXHIBIT_STAND = registerBlock("exhibit_stand",
             new ExhibitStandBlock(AbstractBlock.Settings.create()
                     .requiresTool()
+                    .nonOpaque()
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MagicMod.MOD_ID, "exhibit_stand")))
                     .strength(4f)));
 
