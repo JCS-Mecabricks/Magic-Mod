@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "magicmod:item/wand",
-		"particle": "magicmod:item/wand"
+		"0": "magicmod:item/wand_3d",
+		"particle": "magicmod:item/wand_3d"
 	},
 	"elements": [
 		{
@@ -73,10 +73,10 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [1.25, 2.5, 0.25]
+			"translation": [1.25, 4, 0.25]
 		},
 		"thirdperson_lefthand": {
-			"translation": [-1, 2.75, 1]
+			"translation": [-1, 4.75, 1]
 		},
 		"firstperson_righthand": {
 			"rotation": [-16.25, 0, 0],

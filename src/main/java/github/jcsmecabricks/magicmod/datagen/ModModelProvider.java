@@ -17,10 +17,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EXHIBIT_STAND);
-        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.WIZARD_LAMP, blockStateModelGenerator.modelCollector);
-        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.WIZARD_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.WIZARD_LAMP)
-                .coordinate(BlockStateModelGenerator.createBooleanModelMap(WizardLampBlock.CLICK, lampOnIdentifier, lampOffIdentifier)));
     }
 
     @Override

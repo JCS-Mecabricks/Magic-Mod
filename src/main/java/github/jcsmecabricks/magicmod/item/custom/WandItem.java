@@ -16,16 +16,22 @@ public class WandItem extends Item {
     }
 
     @Override
-    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (RANDOM.nextFloat() < 0.22) {
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 600, 0));
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 600, 0));
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 600, 0));
+    public void postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        if (RANDOM.nextFloat() < 0.25) {
             target.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0));
+        }
+        if (RANDOM.nextFloat() < 0.25) {
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 600, 0));
+        }
+        if (RANDOM.nextFloat() < 0.25) {
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 600, 0));
+        }
+        if (RANDOM.nextFloat() < 0.25) {
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 600, 0));
         }
 
         stack.damage(1, attacker, EquipmentSlot.MAINHAND);
 
-        return super.postHit(stack, target, attacker);
+        super.postHit(stack, target, attacker);
     }
 }

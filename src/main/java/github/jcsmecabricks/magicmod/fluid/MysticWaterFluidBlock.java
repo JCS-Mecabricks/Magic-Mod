@@ -3,6 +3,7 @@ package github.jcsmecabricks.magicmod.fluid;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityCollisionHandler;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -16,7 +17,7 @@ public class MysticWaterFluidBlock extends FluidBlock {
     }
 
     @Override
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler) {
         if (entity instanceof LivingEntity livingEntity) {
             if (!world.isClient()) {
                 if (!livingEntity.hasStatusEffect(StatusEffects.REGENERATION)) {
