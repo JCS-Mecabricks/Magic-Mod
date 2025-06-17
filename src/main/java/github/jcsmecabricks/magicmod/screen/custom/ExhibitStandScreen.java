@@ -2,6 +2,7 @@ package github.jcsmecabricks.magicmod.screen.custom;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import github.jcsmecabricks.magicmod.MagicMod;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.render.RenderLayer;
@@ -24,10 +25,9 @@ public class ExhibitStandScreen extends HandledScreen<ExhibitStandScreenHandler>
 
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
-        context.drawTexture(RenderLayer::getGuiTextured, GUI_TEXTURE, x, y, 0.0F, 0.0F, this.backgroundWidth, this.backgroundHeight, 256, 256);
+        context.drawTexture(RenderPipelines.GUI_TEXTURED, GUI_TEXTURE, x, y, 0.0F, 0.0F, this.backgroundWidth, this.backgroundHeight, 256, 256);
     }
 
     @Override

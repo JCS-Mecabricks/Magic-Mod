@@ -64,16 +64,6 @@ public class BroomEntity extends LivingEntity implements Mount {
     }
 
     @Override
-    public void readCustomDataFromNbt(NbtCompound nbt) {
-        super.readCustomDataFromNbt(nbt);
-    }
-
-    @Override
-    public void writeCustomDataToNbt(NbtCompound nbt) {
-        super.writeCustomDataToNbt(nbt);
-    }
-
-    @Override
     public ActionResult interact(PlayerEntity player, Hand hand) {
         setRiding(player);
         return ActionResult.SUCCESS;
