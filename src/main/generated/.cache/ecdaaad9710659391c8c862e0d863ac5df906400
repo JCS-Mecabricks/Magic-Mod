@@ -1,12 +1,13 @@
-// 1.21.4	-999999999-01-01T00:00:00	Magic Mod/Model Definitions
-34058b887250ee328e3a49c6f88cd3142b983b87 assets/magicmod/blockstates/exhibit_stand.json
-dc248beadfd206d9e8ac05f7a722e90589996c7a assets/magicmod/blockstates/wizard_lamp.json
+// 1.21.5	-999999999-01-01T00:00:00	Magic Mod/Model Definitions
+ab82ae730084ab4e34b3de81c5ce3ab6e58a596d assets/magicmod/blockstates/wizard_lamp.json
+75487e5594c2f492766d1ec9f85be6e9f40c995c assets/magicmod/items/broom.json
 b3e44b093301233a7c0c852b3bfb8fb8e3e55192 assets/magicmod/items/exhibit_stand.json
+90481432a2e3b5944fe8b2b2aeed20ce798abf06 assets/magicmod/items/milk_cauldron.json
 ecdaddb2c00f19e423e9effc693c844a302ce31f assets/magicmod/items/mystic_water_bucket.json
+5b7deb34a02a45b82816d86a420426b793e1b0bd assets/magicmod/items/mystic_water_cauldron.json
 a9b02fef8991b270fecc9f7b347d2d30eb988062 assets/magicmod/items/wand.json
 0305212adfa5630bedd29214c0d3fe56a1833957 assets/magicmod/items/wizard_lamp.json
 eab05285a779c31f98662115e530255264b42b91 assets/magicmod/items/wizard_staff.json
-4238e031654970ebea32223279cbb401053616ae assets/magicmod/models/block/exhibit_stand.json
 becfe50c80193db2898eadd784ac672d96aaf630 assets/magicmod/models/block/wizard_lamp.json
-5fc0e9dc592d4cd3b7113b8e9bb49b62eefcf640 assets/magicmod/models/block/wizard_lamp_on.json
+5cd2aa6029de0d909f793b6eca803a571a42d330 assets/magicmod/models/item/broom.json
 c86dd096739723c740498f221cc84f65b9afcad2 assets/magicmod/models/item/mystic_water_bucket.json

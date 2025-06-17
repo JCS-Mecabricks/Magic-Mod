@@ -2,9 +2,14 @@ package github.jcsmecabricks.magicmod.block;
 
 import github.jcsmecabricks.magicmod.MagicMod;
 import github.jcsmecabricks.magicmod.block.custom.ExhibitStandBlock;
+import github.jcsmecabricks.magicmod.block.custom.MilkCauldronBlock;
+import github.jcsmecabricks.magicmod.block.custom.MysticWaterCauldronBlock;
 import github.jcsmecabricks.magicmod.block.custom.WizardLampBlock;
+import github.jcsmecabricks.magicmod.util.MilkCauldronInteraction;
+import github.jcsmecabricks.magicmod.util.MysticWaterCauldronInteraction;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -25,6 +30,14 @@ public class ModBlocks {
                     .nonOpaque()
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MagicMod.MOD_ID, "exhibit_stand")))
                     .strength(4f)));
+
+    public static final Block MYSTIC_WATER_CAULDRON = registerBlock("mystic_water_cauldron",
+            new MysticWaterCauldronBlock(AbstractBlock.Settings.copy(Blocks.CAULDRON)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MagicMod.MOD_ID, "mystic_water_cauldron"))), MysticWaterCauldronInteraction.MYSTIC_WATER));
+
+    public static final Block MILK_CAULDRON = registerBlock("milk_cauldron",
+            new MilkCauldronBlock(AbstractBlock.Settings.copy(Blocks.CAULDRON)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MagicMod.MOD_ID, "milk_cauldron"))), MilkCauldronInteraction.MILK));
 
 
     private static Block registerBlock(String name, Block block) {

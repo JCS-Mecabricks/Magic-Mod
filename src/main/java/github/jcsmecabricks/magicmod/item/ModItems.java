@@ -1,6 +1,8 @@
 package github.jcsmecabricks.magicmod.item;
 
 import github.jcsmecabricks.magicmod.MagicMod;
+import github.jcsmecabricks.magicmod.entity.ModEntities;
+import github.jcsmecabricks.magicmod.item.custom.BroomItem;
 import github.jcsmecabricks.magicmod.item.custom.WandItem;
 import github.jcsmecabricks.magicmod.item.custom.WizardStaffItem;
 import net.minecraft.item.Item;
@@ -19,6 +21,13 @@ public class ModItems {
                     .maxDamage(255)
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM,
                             Identifier.of(MagicMod.MOD_ID, "wizard_staff")))));
+
+    public static final Item BROOM = registerItem("broom",
+            new BroomItem(ModEntities.BROOM, new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.RARE)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM,
+                            Identifier.of(MagicMod.MOD_ID, "broom")))));
 
     public static final Item WAND = registerItem("wand",
             new WandItem(new Item.Settings()

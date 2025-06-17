@@ -4,15 +4,11 @@ import github.jcsmecabricks.magicmod.MagicMod;
 import github.jcsmecabricks.magicmod.block.ModBlocks;
 import github.jcsmecabricks.magicmod.fluid.ModFluids;
 import github.jcsmecabricks.magicmod.item.ModItems;
-import github.jcsmecabricks.magicmod.potion.ModPotions;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
-
-import java.util.Optional;
 
 public class ModGroups {
     public static final Text MAGIC_TITLE = Text.translatable("itemGroup." + MagicMod.MOD_ID + ".magic_mod_group");
@@ -23,6 +19,7 @@ public class ModGroups {
                 entries.add(ModItems.WIZARD_STAFF);
                 entries.add(ModBlocks.WIZARD_LAMP);
                 entries.add(ModItems.WAND);
+                entries.add(ModItems.BROOM);
                 entries.add(ModBlocks.EXHIBIT_STAND);
                 entries.add(ModFluids.MYSTIC_WATER_BUCKET);
             }).build());

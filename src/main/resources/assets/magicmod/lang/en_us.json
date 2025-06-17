@@ -1,6 +1,8 @@
 {
   "itemGroup.magicmod.magic_mod_group": "Magic Items",
   "item.magicmod.wizard_staff": "Wizard Staff",
+  "entity.magicmod.broom": "Broom",
+  "item.magicmod.broom": "Broom",
   "item.magicmod.wand": "Wand",
   "item.magicmod.mystic_water_bucket": "Mystic Bucket",
   "block.magicmod.wizard_lamp": "Wizard Lamp",

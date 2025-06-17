@@ -1,9 +1,11 @@
-// 1.21.4	-999999999-01-01T00:00:00	Magic Mod/Magic Mod Recipes
+// 1.21.5	-999999999-01-01T00:00:00	Magic Mod/Magic Mod Recipes
 64b9952342fc262e5a25037581b7d5dbaa7bd225 data/magicmod/advancement/recipes/building_blocks/exhibit_stand.json
 fd05b325ca5d326ca68a8bcb8998ac3e091eedf3 data/magicmod/advancement/recipes/building_blocks/wand.json
 804cee266e425ce5e11efa88d3062aa6064deb2b data/magicmod/advancement/recipes/building_blocks/wizard_lamp.json
+d321575132f1f3d0a2b4be12c3690f6b94c6157c data/magicmod/advancement/recipes/combat/broom.json
 3acd0e73d6ad97de9d09b47896eecc71d68610da data/magicmod/advancement/recipes/combat/mystic_water_bucket.json
 a8b83316eb216d91e4890262d7eade9f02b63002 data/magicmod/advancement/recipes/combat/wizard_staff.json
+0ff5ac73b8223b3fea90cabce63b66012db703b9 data/magicmod/recipe/broom.json
 097d19a748293d101835bcbda585dfb875dd7e82 data/magicmod/recipe/exhibit_stand.json
 daa8127b12a1d34dd28e17ac0a456895fa08f222 data/magicmod/recipe/mystic_water_bucket.json
 0636d6969af3b7847f8c1eae9a98f32bb6d411c9 data/magicmod/recipe/wand.json

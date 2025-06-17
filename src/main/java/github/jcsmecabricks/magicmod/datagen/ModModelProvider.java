@@ -16,12 +16,13 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EXHIBIT_STAND);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WIZARD_LAMP);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.WIZARD_STAFF);
+        itemModelGenerator.register(ModItems.BROOM, Models.GENERATED);
         itemModelGenerator.register(ModItems.WAND);
         itemModelGenerator.register(ModFluids.MYSTIC_WATER_BUCKET, Models.GENERATED);
 

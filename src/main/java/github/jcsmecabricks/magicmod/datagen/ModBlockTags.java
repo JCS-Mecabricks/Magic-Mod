@@ -18,6 +18,10 @@ public class ModBlockTags extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.EXHIBIT_STAND);
 
+        getOrCreateTagBuilder(BlockTags.CAULDRONS)
+                .add(ModBlocks.MILK_CAULDRON)
+                .add(ModBlocks.MYSTIC_WATER_CAULDRON);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.EXHIBIT_STAND);
     }

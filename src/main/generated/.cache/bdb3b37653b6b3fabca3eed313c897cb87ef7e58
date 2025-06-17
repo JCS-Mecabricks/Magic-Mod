@@ -1,3 +1,4 @@
-// 1.21.4	-999999999-01-01T00:00:00	Magic Mod/Tags for minecraft:block
+// 1.21.5	-999999999-01-01T00:00:00	Magic Mod/Tags for minecraft:block
+7cd646e01cbb28b4cf7f470355686491d8ba250f data/minecraft/tags/block/cauldrons.json
 6ec0f6df91d0f278d912ad133b386975ce13960a data/minecraft/tags/block/mineable/pickaxe.json
 6ec0f6df91d0f278d912ad133b386975ce13960a data/minecraft/tags/block/needs_stone_tool.json

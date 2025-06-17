@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "magicmod:wand",
+    "S": "minecraft:stick",
+    "W": "minecraft:wheat"
+  },
+  "pattern": [
+    "  I",
+    " S ",
+    "W  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "magicmod:broom"
+  }
+}

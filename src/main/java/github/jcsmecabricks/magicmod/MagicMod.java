@@ -2,14 +2,19 @@ package github.jcsmecabricks.magicmod;
 
 import github.jcsmecabricks.magicmod.block.ModBlocks;
 import github.jcsmecabricks.magicmod.block.entity.ModBlockEntities;
+import github.jcsmecabricks.magicmod.entity.ModEntities;
+import github.jcsmecabricks.magicmod.entity.custom.BroomEntity;
 import github.jcsmecabricks.magicmod.fluid.ModFluids;
 import github.jcsmecabricks.magicmod.group.ModGroups;
 import github.jcsmecabricks.magicmod.item.ModItems;
 import github.jcsmecabricks.magicmod.potion.ModPotions;
 import github.jcsmecabricks.magicmod.screen.ModScreenHandlers;
+import github.jcsmecabricks.magicmod.util.MilkCauldronInteraction;
+import github.jcsmecabricks.magicmod.util.MysticWaterCauldronInteraction;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -29,6 +34,9 @@ public class MagicMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.load();
 		ModGroups.load();
+		MysticWaterCauldronInteraction.registerBehaviour();
+		MilkCauldronInteraction.registerBehaviour();
+		ModEntities.loadEntities();
 		ModBlocks.load();
 		ModBlockEntities.loadBlockEntities();
 		ModScreenHandlers.loadModScreenHandlers();
@@ -38,6 +46,7 @@ public class MagicMod implements ModInitializer {
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.AWKWARD, Items.WIND_CHARGE, ModPotions.LEVITATION_POTION);
 		});
+		FabricDefaultAttributeRegistry.register(ModEntities.BROOM, BroomEntity.createBroomAttributes());
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			if(entity instanceof LivingEntity livingEntity && !world.isClient()) {
 				if(player.getMainHandStack().getItem() == ModItems.WIZARD_STAFF) {

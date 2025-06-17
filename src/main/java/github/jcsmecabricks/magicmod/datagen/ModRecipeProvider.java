@@ -37,6 +37,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                         .offerTo(exporter);
 
+                createShaped(RecipeCategory.COMBAT, ModItems.BROOM)
+                        .input('I', ModItems.WAND)
+                        .input('S', Items.STICK)
+                        .input('W', Items.WHEAT)
+                        .pattern("  I")
+                        .pattern(" S ")
+                        .pattern("W  ")
+                        .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                        .criterion(hasItem(ModItems.WAND), conditionsFromItem(ModItems.WAND))
+                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EXHIBIT_STAND)
                         .input('S', Items.IRON_INGOT)
                         .pattern("SSS")
