@@ -32,7 +32,7 @@ public class WizardStaffItem extends Item {
     public ActionResult use(World world, PlayerEntity player, Hand hand) {
         ItemStack itemStack = player.getStackInHand(hand);
         if (world instanceof ServerWorld serverWorld) {
-            ProjectileEntity.spawnWithVelocity((world2, shooter, stack) -> new WindChargeEntity(player, world, player.getPos().getX(), player.getEyePos().getY(), player.getPos().getZ()), serverWorld, itemStack, player, 0.0F, POWER, 1.0F);
+            ProjectileEntity.spawnWithVelocity((world2, shooter, stack) -> new WindChargeEntity(player, world, player.getX(), player.getEyePos().getY(), player.getZ()), serverWorld, itemStack, player, 0.0F, POWER, 1.0F);
 
             itemStack.damage(1, player, EquipmentSlot.MAINHAND);
     }

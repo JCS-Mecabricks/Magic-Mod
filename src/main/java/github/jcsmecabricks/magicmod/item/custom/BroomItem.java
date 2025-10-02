@@ -64,7 +64,7 @@ public class BroomItem extends Item {
                     if (!world.isSpaceEmpty(broomEntity, broomEntity.getBoundingBox())) {
                         return ActionResult.FAIL;
                     } else {
-                        if (!world.isClient) {
+                        if (!world.isClient()) {
                             world.spawnEntity(broomEntity);
                             world.emitGameEvent(user, GameEvent.ENTITY_PLACE, hitResult.getPos());
                             itemStack.decrement(1);

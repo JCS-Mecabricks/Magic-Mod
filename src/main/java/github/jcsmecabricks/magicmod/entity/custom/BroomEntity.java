@@ -86,7 +86,7 @@ public class BroomEntity extends LivingEntity implements Mount {
         if (!this.hasVehicle()) {
             if (onGround) {
                 this.onLanding();
-            } else if (!this.getWorld().getFluidState(this.getBlockPos().down()).isIn(FluidTags.WATER) && heightDifference < 0.0) {
+            } else if (!this.getEntityWorld().getFluidState(this.getBlockPos().down()).isIn(FluidTags.WATER) && heightDifference < 0.0) {
                 this.fallDistance -= (float)heightDifference;
             }
         }
@@ -166,12 +166,12 @@ public class BroomEntity extends LivingEntity implements Mount {
                 Box boundingBox = passenger.getBoundingBox(pose);
                 for (int[] offset : offsets) {
                     blockPosMutable.set(blockPos.getX() + offset[0], blockPos.getY(), blockPos.getZ() + offset[1]);
-                    BlockState state = this.getWorld().getBlockState(blockPosMutable);
-                    VoxelShape shape = state.getCollisionShape(this.getWorld(), blockPosMutable);
+                    BlockState state = this.getEntityWorld().getBlockState(blockPosMutable);
+                    VoxelShape shape = state.getCollisionShape(this.getEntityWorld(), blockPosMutable);
                     double d0 = shape.isEmpty() ? 0.0 : shape.getMax(Direction.Axis.Y);
                     if (Dismounting.canDismountInBlock(d0)) {
                         Vec3d vec3d = Vec3d.ofBottomCenter(blockPosMutable).add(d0);
-                        if (Dismounting.canPlaceEntityAt(this.getWorld(), passenger, boundingBox.offset(vec3d))) {
+                        if (Dismounting.canPlaceEntityAt(this.getEntityWorld(), passenger, boundingBox.offset(vec3d))) {
                             passenger.setPose(pose);
                             return vec3d;
                         }
