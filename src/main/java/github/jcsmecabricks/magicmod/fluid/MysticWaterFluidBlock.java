@@ -17,7 +17,7 @@ public class MysticWaterFluidBlock extends FluidBlock {
     }
 
     @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler) {
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, boolean bl) {
         if (entity instanceof LivingEntity livingEntity) {
             if (!world.isClient()) {
                 if (!livingEntity.hasStatusEffect(StatusEffects.REGENERATION)) {

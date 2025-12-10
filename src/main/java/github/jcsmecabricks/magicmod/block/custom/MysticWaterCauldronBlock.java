@@ -32,7 +32,7 @@ public class MysticWaterCauldronBlock extends AbstractCauldronBlock{
     }
 
     @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler) {
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, boolean bl) {
         if (entity instanceof LivingEntity livingEntity) {
             if (!livingEntity.hasStatusEffect(StatusEffects.REGENERATION)) {
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 300, 0)); // 15 seconds
@@ -42,7 +42,6 @@ public class MysticWaterCauldronBlock extends AbstractCauldronBlock{
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 300, 0)); // 15 seconds
             }
         }
-        super.onEntityCollision(state, world, pos, entity, handler);
     }
 
     @Override

@@ -35,7 +35,7 @@ public class WizardStaffItem extends Item {
             ProjectileEntity.spawnWithVelocity((world2, shooter, stack) -> new WindChargeEntity(player, world, player.getX(), player.getEyePos().getY(), player.getZ()), serverWorld, itemStack, player, 0.0F, POWER, 1.0F);
 
             itemStack.damage(1, player, EquipmentSlot.MAINHAND);
-    }
+        }
         world.playSound((PlayerEntity)null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_WIND_CHARGE_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
         player.incrementStat(Stats.USED.getOrCreateStat(this));
         return ActionResult.SUCCESS;

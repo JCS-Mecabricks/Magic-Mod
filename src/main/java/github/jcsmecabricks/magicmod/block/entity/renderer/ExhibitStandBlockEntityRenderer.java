@@ -36,26 +36,12 @@ public class ExhibitStandBlockEntityRenderer implements BlockEntityRenderer<Exhi
                                   Vec3d cameraPos, @Nullable ModelCommandRenderer.CrumblingOverlayCommand crumblingOverlay) {
         BlockEntityRenderer.super.updateRenderState(blockEntity, state, tickProgress, cameraPos, crumblingOverlay);
 
-        var world = blockEntity.getWorld();
-        var client = net.minecraft.client.MinecraftClient.getInstance();
-        var player = client.player;
-
-        if (world != null && player != null) {
-            itemModelManager.clearAndUpdate(
-                    state.itemRenderState,
-                    blockEntity.getStack(0),
-                    ItemDisplayContext.FIXED,
-                    world,
-                    player,
-                    0
-            );
-        }
-
-
-
         state.lightPosition = blockEntity.getPos();
         state.blockEntityWorld = blockEntity.getWorld();
         state.rotation = blockEntity.getRenderingRotation();
+
+        itemModelManager.clearAndUpdate(state.itemRenderState,
+                blockEntity.getStack(0), ItemDisplayContext.FIXED, blockEntity.getWorld(), null, 0);
     }
 
     @Override

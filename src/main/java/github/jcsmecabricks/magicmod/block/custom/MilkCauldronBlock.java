@@ -31,7 +31,7 @@ public class MilkCauldronBlock extends AbstractCauldronBlock {
     }
 
     @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler) {
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, boolean bl) {
         if (entity instanceof LivingEntity livingEntity) {
             livingEntity.removeStatusEffect(StatusEffects.POISON);
             livingEntity.removeStatusEffect(StatusEffects.SLOWNESS);
@@ -44,7 +44,7 @@ public class MilkCauldronBlock extends AbstractCauldronBlock {
             livingEntity.removeStatusEffect(StatusEffects.BAD_OMEN);
             livingEntity.removeStatusEffect(StatusEffects.DARKNESS);
         }
-        super.onEntityCollision(state, world, pos, entity, handler);
+        super.onEntityCollision(state, world, pos, entity, handler, bl);
     }
 
     @Override
